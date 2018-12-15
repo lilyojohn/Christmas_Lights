@@ -20,7 +20,7 @@ void erin_onered1green(int wait) {
   }
 }
 
-void erin_redrunning(int wait) {
+void erin_redrunning(int wait) {    
   int i;
   for(i=0; i<strip.numPixels(); i++) {
     strip.setPixelColor(i,0,50,0); //green

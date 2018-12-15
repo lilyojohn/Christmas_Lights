@@ -51,3 +51,15 @@ void intervals_1(int wait) {
     //wait+=1;
   }
 }
+
+void onegreen1pink(int wait) {
+  int i;
+  for(i=0; i<strip.numPixels(); i++) {
+    strip.setPixelColor(i,0,50,0); //green
+    i++;
+    strip.setPixelColor(i,255,192,203); //pink
+    strip.show();
+    delay(wait);
+  }
+}
+
